@@ -1,0 +1,45 @@
+[
+    {
+        "id": 101,
+        "img": "../images/bed-bugs.png",
+        "name": "Bed Bugs",
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque enim ea culpa consequuntur sint incidunt natus omnis rerum maxime eum?",
+        "button": "Read More"
+    },
+    {
+        "id": 102,
+        "img": "../images/termite.png",
+        "name": "Termites",
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque enim ea culpa consequuntur sint incidunt natus omnis rerum maxime eum?",
+        "button": "Read More"
+    },
+    {
+        "id": 103,
+        "img": "../images/cockroach.png",
+        "name": "Cockroach",
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque enim ea culpa consequuntur sint incidunt natus omnis rerum maxime eum?",
+        "button": "Read More"
+    },
+    {
+        "id": 104,
+        "img": "../images/rat.png",
+        "name": "Rat",
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque enim ea culpa consequuntur sint incidunt natus omnis rerum maxime eum?",
+        "button": "Read More"
+    },
+    {
+        "id": 105,
+        "img": "../images/mosquito.png",
+        "name": "Mosquito",
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque enim ea culpa consequuntur sint incidunt natus omnis rerum maxime eum?",
+        "button": "Read More"
+    },
+    {
+        "id": 106,
+        "img": "../images/flies.png",
+        "name": "Flies",
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque enim ea culpa consequuntur sint incidunt natus omnis rerum maxime eum?",
+        "button": "Read More"
+    }
+    
+  ]

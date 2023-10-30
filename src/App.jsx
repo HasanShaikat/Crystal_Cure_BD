@@ -4,6 +4,7 @@ import './App.css'
 import Banner from './Banner/Banner'
 import Contact from './Contact/Contact'
 import ExtraLine from './ExtraLine/ExtraLine'
+import Faq from './Faq/Faq'
 import Footer from './Footer/Footer'
 import Header from './Header/Header'
 import Services from './Services/Services'
@@ -22,6 +23,7 @@ function App() {
       <ExtraLine/>
       <About />
       <ExtraLine/>
+      <Faq />
       <Contact />
       <Footer/>
     </div>

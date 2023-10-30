@@ -21,7 +21,7 @@ const Header = () => {
   }, []);
  
   const navList = (
-    <ul className="mb-4 mt-2 flex flex-col gap-1 md:mb-0 md:mt-0 md:flex-row md:items-center lg:gap-6">
+    <ul className="px-2 md:px-0 mb-4 mt-2 flex flex-col gap-1 md:mb-0 md:mt-0 md:flex-row md:items-center lg:gap-6">
       <Typography
         as="li"
         variant="paragraph"
@@ -32,6 +32,9 @@ const Header = () => {
           Home
         </a>
       </Typography>
+      <li>
+        <a href="#" className="flex items-center text-black">Home</a>
+      </li>
       <Typography
         as="li"
         variant="paragraph"
