@@ -1,4 +1,3 @@
-import React from 'react';
 import { MdFacebook } from "react-icons/md";
 import { RiLinkedinFill, RiGlobalLine, RiArrowUpDoubleLine } from "react-icons/ri";
 
@@ -8,7 +7,7 @@ const Footer = () => {
     return (
         <div className='shadow bg-white text-gray-800 pt-6'>
             
-            <div className='container mx-auto px-8 grid md:grid-cols-3 gap-y-4 gap-x-8'>
+            <div className='container mx-auto px-8 grid md:grid-cols-3 gap-y-4 gap-x-8 items-center'>
                 <div>
                     <img src="../images/about.png" alt="" />
                 </div>
@@ -73,7 +72,7 @@ const Footer = () => {
                             <a href="#"><RiLinkedinFill/></a>
                             <a href="#"><RiGlobalLine/></a>
                         </div>
-                        <div className=''>
+                        <div className='border rounded-full p-2 shadow-xl'>
                             <a href="#" className=''>
                                 <RiArrowUpDoubleLine className="text-4xl text-red-600 bg-white rounded-full p-2"></RiArrowUpDoubleLine>
                             </a>

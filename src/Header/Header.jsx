@@ -32,9 +32,6 @@ const Header = () => {
           Home
         </a>
       </Typography>
-      <li>
-        <a href="#" className="flex items-center text-black">Home</a>
-      </li>
       <Typography
         as="li"
         variant="paragraph"

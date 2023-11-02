@@ -13,9 +13,9 @@ const Services = () => {
             const data = await res.json();
             if(data.length > 0){
                 setCards(data);
-            }console.log(data);
+            }return(data);
         }catch(e){
-            console.error(e)
+            return(e)
         }
     }
 
@@ -29,7 +29,7 @@ const Services = () => {
          
             <h1 className='text-3xl py-4 font-semibold text-center uppercase text-gray-800 mb-4'>Services</h1>
 
-            <div className='container mx-auto md:px-8 sm:px-4'> 
+            <div className='container mx-auto md:px-4 sm:px-4'> 
             
                 <ServiceCard cards={cards} />
             
