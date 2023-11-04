@@ -4,17 +4,6 @@ import { RiLinkedinFill, RiGlobalLine, RiArrowUpDoubleLine } from "react-icons/r
 
 
 const Footer = () => {
-    let url = "";
-    // form.addEventListener("submit",(e)=>{
-    //     let form = document.querySelector('form');
-    //     let data = FormData(form);
-    //     fetch(url, {
-    //         method: "POST",
-    //         body: data
-    //     }).then((res)=>res.text())
-    //     .then((finalRes)=>console.log(finalRes))
-    //     e.preventDefault();
-    // })
 
     function submit (e){
         const formEle = document.querySelector('form')
@@ -28,7 +17,7 @@ const Footer = () => {
     }
 
     return (
-        <div className='shadow bg-white text-gray-800 pt-6'>
+        <div className='shadow bg-white text-gray-800 pt-6' id='contact'>
             
             <div className='container mx-auto px-8 grid md:grid-cols-3 gap-y-4 gap-x-12 items-center'>
                 <div>
@@ -94,8 +83,8 @@ const Footer = () => {
                     </div>
                     <div className='flex justify-between'>
                         <div className='flex gap-x-4 text-2xl'>
-                            <a href="https://www.facebook.com/ccpcsbd"><MdFacebook/></a> 
-                            <a href="https://www.linkedin.com/in/crystal-cure-pest-control-9654a328b/"><RiLinkedinFill/></a>
+                            <a href="https://www.facebook.com/ccpcsbd" target="blank"><MdFacebook/></a> 
+                            <a href="https://www.linkedin.com/in/crystal-cure-pest-control-9654a328b/" target="blank"><RiLinkedinFill/></a>
                             <a href="#"><RiGlobalLine/></a>
                         </div>
                         <div className='border rounded-full p-2 shadow-xl'>

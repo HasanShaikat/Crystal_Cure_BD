@@ -36,10 +36,10 @@ const Faq = () => {
 
 
     return (
-        <section className='container mx-auto md:px-4 sm:px-4 w-3/4'>
+        <section className='container mx-auto md:px-4 sm:px-4 w-3/4' id='faq'>
             <h2 className='text-center my-4 font-bold text-2xl'>FAQ's</h2>
 
-              <div className='grid md:grid-cols-2 gap-2 items-center'>
+              <div className='grid md:grid-cols-2 gap-8 items-center'>
 
               <div>
                 <img src="../images/faq.svg" alt=""  />

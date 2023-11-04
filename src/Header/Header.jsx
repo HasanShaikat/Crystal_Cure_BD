@@ -6,7 +6,7 @@ import {
   Button,
   IconButton,
 } from "@material-tailwind/react";
-import { BiPhone } from "react-icons/bi";
+import { MdCall } from "react-icons/md";
 
 
  
@@ -58,12 +58,22 @@ const Header = () => {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <a href="#faq" className="flex items-center">
+          FAQ
+        </a>
+      </Typography>
+      <Typography
+        as="li"
+        variant="paragraph"
+        color="blue-gray"
+        className="p-1 font-normal"
+      >
+        <a href="#contact" className="flex items-center">
           Contact
         </a>
       </Typography>
       <Button variant="gradient" size="lg" className="hidden md:inline-block" color="red">
-          <span className="whitespace-pre ... md:text-sm  flex items-center"><BiPhone className="text-lg"></BiPhone>  +880 1904480448</span>
+          <span className="whitespace-pre ... md:text-sm  flex items-center"><MdCall className="text-lg"></MdCall> +880 189197 1990</span>
         </Button>
     </ul>
   );
@@ -124,7 +134,7 @@ const Header = () => {
         <div className="container mx-auto ">
           {navList}
           <Button variant="gradient" size="sm" fullWidth className="mb-2 " color="red">
-          <span className="whitespace-pre ... flex items-center justify-center"><BiPhone className="text-lg"></BiPhone>  Call Now     +880 190448 0448</span>
+          <span className="whitespace-pre ... flex items-center justify-center"><MdCall className="text-lg"></MdCall>  Call Now +880 189197 1990</span>
           </Button>
         </div>
       </MobileNav>
