@@ -37,7 +37,7 @@ const Faq = () => {
 
     return (
         <section className='container mx-auto md:px-4 sm:px-4 w-3/4' id='faq'>
-            <h2 className='text-center my-4 font-bold text-2xl'>FAQ's</h2>
+            <h2 className='text-3xl py-4 font-semibold text-center text-gray-800 '>FAQ's</h2>
 
               <div className='grid md:grid-cols-2 gap-8 items-center'>
 
@@ -48,7 +48,7 @@ const Faq = () => {
                 <div>
                 <Accordion open={alwaysOpen} icon={<Icon id={alwaysOpen} open={open} />} animate={CUSTOM_ANIMATION}>
                 <AccordionHeader onClick={handleAlwaysOpen}> What kinds of pests do you handle? </AccordionHeader>
-                <AccordionBody className="text-md">
+                <AccordionBody className="">
                 Crystal Cure Pest Control deals with a wide range of pests, including but not limited to ants, cockroaches, termites, rodents, bed bugs, mosquitoes, and other common household pests.
                 </AccordionBody>
             </Accordion>

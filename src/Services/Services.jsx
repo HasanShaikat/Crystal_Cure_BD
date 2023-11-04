@@ -27,7 +27,7 @@ const Services = () => {
        
         <div id="services" className='mb-2'>
          
-            <h1 className='text-3xl py-4 font-semibold text-center uppercase text-gray-800 mb-4'>Services</h1>
+            <h1 className='text-3xl py-4 font-semibold text-center uppercase text-gray-800'>Services</h1>
 
             <div className='container mx-auto md:px-4 sm:px-4'> 
             

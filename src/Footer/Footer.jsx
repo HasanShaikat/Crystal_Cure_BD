@@ -1,5 +1,6 @@
 import { MdFacebook } from "react-icons/md";
-import { RiLinkedinFill, RiGlobalLine, RiArrowUpDoubleLine } from "react-icons/ri";
+import { RiLinkedinFill, RiArrowUpDoubleLine } from "react-icons/ri";
+import { BiLogoGmail } from "react-icons/bi";
 
 
 
@@ -63,7 +64,7 @@ const Footer = () => {
                         Message 
                         </label>
                         </div>
-                        <button type="submit" className='text-red-600 border border-red-100 py-2 rounded text-lg uppercase tracking-widest font-semibold'>Submit</button>
+                        <button type="submit" className='text-red-600 border border-red-300 py-2 rounded text-lg uppercase tracking-widest font-semibold'>Submit</button>
 
                     </form>
                 </div>
@@ -83,9 +84,9 @@ const Footer = () => {
                     </div>
                     <div className='flex justify-between'>
                         <div className='flex gap-x-4 text-2xl'>
-                            <a href="https://www.facebook.com/ccpcsbd" target="blank"><MdFacebook/></a> 
-                            <a href="https://www.linkedin.com/in/crystal-cure-pest-control-9654a328b/" target="blank"><RiLinkedinFill/></a>
-                            <a href="#"><RiGlobalLine/></a>
+                            <a href="https://www.facebook.com/ccpcsbd" target="blank" ><MdFacebook className="text-blue-600"/></a> 
+                            <a href="https://www.linkedin.com/in/crystal-cure-pest-control-9654a328b/" target="blank"><RiLinkedinFill className="text-blue-800"/></a>
+                            <a href="https://mail.google.com/" target="blank"><BiLogoGmail className="text-red-700"/></a>
                         </div>
                         <div className='border rounded-full p-2 shadow-xl'>
                             <a href="#" className=''>

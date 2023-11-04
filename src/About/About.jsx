@@ -2,13 +2,13 @@
 const About = () => {
     return (
         <div className='container mx-auto px-6 md:px-4 py-4' id='about'>
-            <h1 className='text-center uppercase text-3xl'>About us</h1>
+            <h1 className='text-3xl py-4 font-semibold text-center uppercase text-gray-800'>About us</h1>
             <div className='grid md:grid-cols-2 gap-4 pt-6'>
                 <div className='flex justify-center'>
                     <img src="../images/man-pest.png" alt="" className=''/>
                 </div>
                 <div className='text-justify '>
-                    <span className='font-regular text-lg '>
+                    <span className='font-regular text-md text-gray-800 '>
                     Crystal Cure Pest Control is a dedicated and reliable pest management service that aims to provide comprehensive solutions for residential and commercial spaces. With a focus on quality and customer satisfaction, our expert team employs modern and eco-friendly methods to address and eliminate various pest issues.
                     <br /> <br />
 
