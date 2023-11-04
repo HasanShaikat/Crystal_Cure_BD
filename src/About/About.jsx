@@ -9,27 +9,14 @@ const About = () => {
                     <img src="../images/man-pest.png" alt="" className=''/>
                 </div>
                 <div className='text-justify'>
-                    <span className='font-regular text-xl'>
-                    আমাদের সম্পর্কে
+                    <span className='font-regular text-lg'>
+                    Crystal Cure Pest Control is a dedicated and reliable pest management service that aims to provide comprehensive solutions for residential and commercial spaces. With a focus on quality and customer satisfaction, our expert team employs modern and eco-friendly methods to address and eliminate various pest issues.
+                    <br /> <br />
 
-                    আমরা ক্রিস্টাল কিউর পেষ্ট কন্ট্রোল। আমরা আপনার পেস্ট সমস্যার সমাধানে নির্ভীক, এবং সর্বোত্তম সেবা প্রদান করতে গর্ব করি।
+We understand that each pest problem is unique, which is why our approach is personalized to suit the specific needs of our clients. From common household pests like ants, cockroaches, and rodents to more complex issues involving termites or bed bugs, we are equipped to handle a wide range of infestations.
+<br /> <br />
 
-                    আমরা কাজ করেছি ২০২০ সাল থেকে এবং [আপনার সার্ভিস এলিয়ান্স বা অন্য যে কোনও উদাহরণ] এর সদস্য হিসেবে, আমরা [আপনার সেবা প্রদানের স্তর] এ পৌঁছে এসেছি।
-
-                    আমাদের লক্ষ্য হলো:
-
-                    - আমরা পেস্ট সমস্যার সমাধানে সর্বদা উত্তরণ করি এবং গ্রাহকের সুরক্ষা ও সান্ত্বনা নিশ্চিত করি।
-                    - আমরা পেস্ট নিয়ন্ত্রণ প্রক্রিয়া ও ব্যবস্থাপনা সাথে পরিবেশের সহানুভূতি এবং প্রকৃতির সংরক্ষণ সহ সাবালম্বী।
-                    - আমরা আমাদের কাজে দক্ষ এবং প্রফেশনাল পেস্ট নিয়ন্ত্রণ পেশাদার লোকদের সাথে সম্প্রদায়ের অগ্রগতি বাড়ানো সমর্থন করি।
-
-                    আমরা মন্তব্য এবং সাজেশন স্বাগত করি এবং আপনির সমস্যা সমাধানে আপনার সাথে সাথে কাজ করতে সম্মর্পিত। আমরা গর্বিতভাবে আমাদের সেবা দেওয়ার সুযোগ প্রদান করতে প্রস্তুত।
-
-                    আমরা একটি [আপনার কোম্পানির আদর্শ পেস্ট নিয়ন্ত্রণ সেবা সর্ভিস এবং মূল মূল্য] সাথে কাজ করতে গর্বিত। আমরা আপনার সাথে আরও অধিক জানতে চাই এবং আমরা যদি আপনার পেস্ট নিয়ন্ত্রণের সমস্যা সমাধান করতে সাহায্য করতে পারি তাহলে আমাদের সাথে যোগাযোগ করুন।
-
-                    ধন্যবাদ যে আপনি আমাদের সাথে সময় কাটাচ্ছেন।
-
-                    [আপনার নাম]
-                    [আপনার পেস্ট নিয়ন্ত্রণ কোম্পানির নাম]
+Our services are not just about extermination but also about prevention. We believe in educating our clients about proactive measures to prevent future infestations. Crystal Cure Pest Control is committed to creating pest-free environments, ensuring the safety and well-being of our customers.
                     </span>
                 </div>
             </div>

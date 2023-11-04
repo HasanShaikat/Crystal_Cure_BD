@@ -1,14 +1,14 @@
 [
     {
         "id": 101,
-        "img": "../images/bed-bugs.png",
+        "img": "../images/bed_bug_PNG40.png",
         "name": "Bed Bugs",
         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque enim ea culpa consequuntur sint incidunt natus omnis rerum maxime eum?",
         "button": "Read More"
     },
     {
         "id": 102,
-        "img": "../images/termite.png",
+        "img": "../images/termite1.png",
         "name": "Termites",
         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque enim ea culpa consequuntur sint incidunt natus omnis rerum maxime eum?",
         "button": "Read More"

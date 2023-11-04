@@ -4,19 +4,43 @@ import { RiLinkedinFill, RiGlobalLine, RiArrowUpDoubleLine } from "react-icons/r
 
 
 const Footer = () => {
+    let url = "";
+    // form.addEventListener("submit",(e)=>{
+    //     let form = document.querySelector('form');
+    //     let data = FormData(form);
+    //     fetch(url, {
+    //         method: "POST",
+    //         body: data
+    //     }).then((res)=>res.text())
+    //     .then((finalRes)=>console.log(finalRes))
+    //     e.preventDefault();
+    // })
+
+    function submit (e){
+        const formEle = document.querySelector('form')
+        e.preventDefault()
+        alert("Thank You")
+        const formData = new FormData(formEle)
+        fetch("https://script.google.com/macros/s/AKfycbx-xiecDYYcBvFWVg1DFQV7ljahH0FwwHKtvoMdecDPnkKx0_wx7X3-_8bDfPpHnguQAw/exec",{
+            method:"POST",
+            body: formData
+        })
+    }
+
     return (
         <div className='shadow bg-white text-gray-800 pt-6'>
             
-            <div className='container mx-auto px-8 grid md:grid-cols-3 gap-y-4 gap-x-8 items-center'>
+            <div className='container mx-auto px-8 grid md:grid-cols-3 gap-y-4 gap-x-12 items-center'>
                 <div>
                     <img src="../images/about.png" alt="" />
                 </div>
 
                 <div>
-                    <form action="" className="relative h-15 w-full min-w-[200px] grid gap-y-6">
+                    <form action="" className="relative h-15 w-full min-w-[200px] grid gap-y-6 form" id="form" onSubmit={(e)=>submit(e)}>
 
                         <div className=''>
                         <input
+                        name="Name" type="text"
                         className="peer h-full w-full border-b bg-transparent pt-4 pb-2 font-sans text-sm font-normal text-red-500 outline outline-0 transition-all  
                         placeholder-shown:border-red-600 focus:border-red-600 focus:outline-0 disabled:border-0"
                         placeholder=" "
@@ -28,6 +52,7 @@ const Footer = () => {
 
                         <div className=''>
                         <input
+                        name="Email"
                         className="peer h-full w-full border-b bg-transparent pt-4 pb-1.5 font-sans text-sm font-normal text-red-500 outline outline-0 transition-all placeholder-shown:border-red-600 focus:border-red-600 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
                         type='email'
                         placeholder=" "
@@ -40,6 +65,7 @@ const Footer = () => {
 
                         <div className=''>
                         <textarea
+                        name="Message"
                         className="peer h-full w-full border-b border-red-600 bg-transparent pt-4 pb-1.5 font-sans text-sm font-normal text-red-500 outline outline-0 transition-all placeholder-shown:border-red-600 focus:border-red-600 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
                         placeholder=" "
                         required
@@ -53,23 +79,23 @@ const Footer = () => {
                     </form>
                 </div>
 
-                <div className='grid md:gap-y-2 gap-y-4'>
+                <div className='grid md:gap-y-6 gap-y-8'>
                     <div>
                         <h4 className='font-bold'>Mail Address</h4>
                         <span>crystalcurebd@gmail.com</span>
                     </div>
                     <div>
-                        <h4>Phone</h4>
+                        <h4 className='font-bold'>Phone</h4>
                         <span>+880 1891971990 <br /> +880 1904480448</span>
                     </div>
                     <div>
-                        <h4>Address</h4>
+                        <h4 className='font-bold'>Address</h4>
                         <span>678/5-A, West Shewrapara, Dhaka, Bangladesh</span>
                     </div>
                     <div className='flex justify-between'>
                         <div className='flex gap-x-4 text-2xl'>
-                            <a href="facebook.com"><MdFacebook/></a> 
-                            <a href="#"><RiLinkedinFill/></a>
+                            <a href="https://www.facebook.com/ccpcsbd"><MdFacebook/></a> 
+                            <a href="https://www.linkedin.com/in/crystal-cure-pest-control-9654a328b/"><RiLinkedinFill/></a>
                             <a href="#"><RiGlobalLine/></a>
                         </div>
                         <div className='border rounded-full p-2 shadow-xl'>
