@@ -3,99 +3,59 @@ import { RiLinkedinFill, RiArrowUpDoubleLine } from "react-icons/ri";
 import { BiLogoGmail } from "react-icons/bi";
 
 
+// let form = document.querySelector("form");
+// form.addEventListener('submit', (e)=>{
+// e.preventDefault();
+// let data = new FormData(form);
+// fetch('https://script.google.com/macros/s/AKfycbyLTAyihyBp0NqOs4OLoSu_1G9EAcWKmDuS602vG6HMo8j0aS7SRluPc-3gjDhY2OW9KQ/exec',{
+//   method: "POST",
+//   body: data
+// })
+// .then(res => res.text())
+// .then(data => console.log(data))
+// })
 
 const Footer = () => {
 
-    function submit (e){
-        const formEle = document.querySelector('form')
-        e.preventDefault()
-        alert("Thank You")
-        const formData = new FormData(formEle)
-        fetch("https://script.google.com/macros/s/AKfycbx-xiecDYYcBvFWVg1DFQV7ljahH0FwwHKtvoMdecDPnkKx0_wx7X3-_8bDfPpHnguQAw/exec",{
-            method:"POST",
-            body: formData
-        })
-    }
-
+ 
     return (
-        <div className='shadow bg-white text-gray-800 pt-6' id='contact'>
+        <div className='text-gray-800 mt-4' id='contact'>
             
-            <div className='container mx-auto px-8 grid md:grid-cols-3 gap-y-4 gap-x-12 items-center'>
-                <div>
+            <div className='container mx-auto px-8 grid md:grid-cols-3 gap--4 items-center'>
+                <div className="mt-4">
                     <img src="../images/about.png" alt="" />
                 </div>
 
                 <div>
-                    <form action="" className="relative h-15 w-full min-w-[200px] grid gap-y-6 form" id="form" onSubmit={(e)=>submit(e)}>
-
-                        <div className=''>
-                        <input
-                        name="Name" type="text"
-                        className="peer h-full w-full border-b bg-transparent pt-4 pb-2 font-sans text-sm font-normal text-red-500 outline outline-0 transition-all  
-                        placeholder-shown:border-red-600 focus:border-red-600 focus:outline-0 disabled:border-0"
-                        placeholder=" "
-                        />
-                        <label className="after:content[' '] pointer-events-none absolute left-0 -top-3 flex h-10 w-full select-none text-[11px] font-normal leading-tight text-red-500 transition-all after:absolute after:-bottom-3 after:block after:w-full after:scale-x-0 after:border-b-2 after:transition-transform after:duration-300 peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.25] peer-placeholder-shown:text-red-500 peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-red-500 peer-focus:after:scale-x-100 peer-focus:after:border-red-600 peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-red-500">
-                        Name
-                        </label>
-                        </div>
-
-                        <div className=''>
-                        <input
-                        name="Email"
-                        className="peer h-full w-full border-b bg-transparent pt-4 pb-1.5 font-sans text-sm font-normal text-red-500 outline outline-0 transition-all placeholder-shown:border-red-600 focus:border-red-600 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
-                        type='email'
-                        placeholder=" "
-                        required
-                        />
-                        <label className="after:content[' '] pointer-events-none absolute left-0 top-12 flex h-11 w-full select-none text-[11px] font-normal leading-tight text-white transition-all after:absolute after:-bottom-3.5 after:block after:w-full after:scale-x-0 after:border-b-2 after:border-red-600 after:transition-transform after:duration-300 peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.25] peer-placeholder-shown:text-red-500 peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-red-500 peer-focus:after:scale-x-100 peer-focus:after:border-red-600 peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-red-500">
-                        Email
-                        </label>
-                        </div>
-
-                        <div className=''>
-                        <textarea
-                        name="Message"
-                        className="peer h-full w-full border-b border-red-600 bg-transparent pt-4 pb-1.5 font-sans text-sm font-normal text-red-500 outline outline-0 transition-all placeholder-shown:border-red-600 focus:border-red-600 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
-                        placeholder=" "
-                        required
-                        />
-                        <label className="after:content[' '] pointer-events-none absolute left-0 top-28 flex h-11 w-full select-none text-[11px] font-normal leading-tight text-white transition-all after:absolute after:-bottom-11 after:block after:w-full after:scale-x-0 after:border-b-2 after:border-red-600 after:transition-transform after:duration-300 peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.25] peer-placeholder-shown:text-red-500 peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-red-500 peer-focus:after:scale-x-100 peer-focus:after:border-red-600 peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-red-500">
-                        Message 
-                        </label>
-                        </div>
-                        <button type="submit" className='text-red-600 border border-red-300 py-2 rounded text-lg uppercase tracking-widest font-semibold'>Submit</button>
-
-                    </form>
+                    <p>another one</p>
                 </div>
 
-                <div className='grid md:gap-y-6 gap-y-8'>
-                    <div>
-                        <h4 className='font-bold'>Mail Address</h4>
-                        <span>crystalcurebd@gmail.com</span>
-                    </div>
-                    <div>
-                        <h4 className='font-bold'>Phone</h4>
-                        <span>+880 1891971990 <br /> +880 1904480448</span>
-                    </div>
-                    <div>
-                        <h4 className='font-bold'>Address</h4>
-                        <span>678/5-A, West Shewrapara, Dhaka, Bangladesh</span>
-                    </div>
-                    <div className='flex justify-between'>
-                        <div className='flex gap-x-4 text-2xl'>
-                            <a href="https://www.facebook.com/ccpcsbd" target="blank" ><MdFacebook className="text-blue-600"/></a> 
-                            <a href="https://www.linkedin.com/in/crystal-cure-pest-control-9654a328b/" target="blank"><RiLinkedinFill className="text-blue-800"/></a>
-                            <a href="https://mail.google.com/" target="blank"><BiLogoGmail className="text-red-700"/></a>
+
+                <div className='grid grid-cols-1 gap-y-12 mt-4'>
+                        {/* <img className="" src="../images/map.png" alt="Google Map" /> */}
+                        <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1085.3814106298078!2d90.38046187111321!3d23.791084018843968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1699819257057!5m2!1sen!2sbd" style={{border:0, width:"auto", height:"auto"}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                        
                         </div>
-                        <div className='border rounded-full p-2 shadow-xl'>
-                            <a href="#" className=''>
-                                <RiArrowUpDoubleLine className="text-4xl text-red-600 bg-white rounded-full p-2"></RiArrowUpDoubleLine>
-                            </a>
+                        <div className='flex justify-between'>
+                            <div className='flex gap-x-8 text-3xl'>
+                                <a href="https://www.facebook.com/ccpcsbd" target="blank" ><MdFacebook className="text-blue-600"/></a> 
+                                <a href="https://www.linkedin.com/in/crystal-cure-pest-control-9654a328b/" target="blank"><RiLinkedinFill className="text-blue-800"/></a>
+                                <a href="https://mail.google.com/" target="blank"><BiLogoGmail className="text-red-700"/></a>
+                            </div>
+                            <div className='border rounded-full p-2 shadow-xl'>
+                                <a href="#" className=''>
+                                    <RiArrowUpDoubleLine className="text-4xl text-red-600 bg-white rounded-full p-2"></RiArrowUpDoubleLine>
+                                </a>
+                            </div>
+
                         </div>
                         
                     </div>
-                </div>
+            </div>
+
+            <div className="bg-red-700 text-center text-white py-2">
+                <span>Copyright &copy; 2023 Design by <a href="https://www.linkedin.com/in/mehedi910/" target="blank" className="font-bold  italic uppercase"> Mehedi Hasan </a> </span>
             </div>
         </div>
     );

@@ -5,10 +5,20 @@ import {
     CardFooter,
     Typography,
     Button,
+    Dialog,
+    DialogHeader,
+    DialogBody,
   } from "@material-tailwind/react";
+import { useState } from "react";
 
-const ServiceCard = ({cards}) => {
-    return (
+  
+  const ServiceCard = ({cards}) => {
+    const [open, setOpen] = useState(false);
+      
+    const handleOpen = () => setOpen(!open);
+      
+    
+      return (
         <div className="container mx-auto md:px-8 sm:px-4 grid grid-cols-1 md:grid-cols-3 max-w-full h-auto gap-y-4 gap-x-4 justify-items-center md:justify-between">
             {
                 cards.map((cards)=>{
@@ -32,7 +42,18 @@ const ServiceCard = ({cards}) => {
                                     </Typography>
                                 </CardBody>
                                 <CardFooter className="pt-0">
-                                    <Button className='bg-red-800'>{button}</Button>
+                                    <Button className='bg-red-800' onClick={handleOpen}>
+                                    {button}
+                                    </Button>
+                                    {/* <Dialog open={open} handler={handleOpen}animate={{
+                                        mount: { scale: 1, y: 0 },
+                                        unmount: { scale: 0.9, y: -100 },}}>
+                                    <DialogHeader>Its a simple dialog.</DialogHeader>
+                                    <DialogBody>
+                                    {description}
+                                    </DialogBody>
+                                    
+                                    </Dialog> */}
                                 </CardFooter>
                         </Card>
                        

@@ -24,7 +24,9 @@ function App() {
       <About />
       <ExtraLine/>
       <Faq />
+      <ExtraLine/>
       <Contact />
+      <ExtraLine/>
       <Footer/>
     </div>
   )
