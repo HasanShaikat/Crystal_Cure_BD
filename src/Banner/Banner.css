@@ -1,0 +1,6 @@
+@media only screen and (max-width: 340px) {
+    .content-hidden {
+        /* visibility: hidden; */
+        display: none;
+    }
+  }

@@ -2,12 +2,14 @@ import { Button, Input, Textarea } from "@material-tailwind/react";
 
 const Contact = () => {
     return (
-        <section className="my-4">          
-            <h1 className='text-3xl my-4 font-semibold text-center uppercase text-gray-800'>Reach Out</h1>
-            <div className="grid md:grid-cols-2 gap-4 container mx-auto items-center md:px-8 sm:px-4">
+        <section className="my-4" id='contact'>
+            <div className="text-center my-4">
+                <h1 className='text-3xl font-semibold uppercase text-gray-800'>Get In Touch</h1>
+                <p className="text-gray-600">Ask How We Can Help You!</p>
+            </div>          
+            
+            <div className="grid md:grid-cols-2 gap-4 container mx-auto items-center px-4">
                 <form className="grid gap-4 h-full">
-
-
                     <div className="flex w-full flex-col gap-6">
                         <Input name="name" type="text" label="Name" required />
                     </div>
@@ -36,6 +38,10 @@ const Contact = () => {
                         <div>
                             <h4 className='font-bold'>Address</h4>
                             <span>678/5-A, North Kafrul, Kafrul, Dhaka-1206</span>
+                        </div>
+                        <div>
+                            <h4 className='font-bold'>Website</h4>
+                            <span>www.ccpestcontrolbd.com</span>
                         </div>
                         
                 </div>

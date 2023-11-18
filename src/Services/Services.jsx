@@ -25,11 +25,13 @@ const Services = () => {
 
     return (
        
-        <div id="services" className='mb-2'>
+        <div id="services" className='mb-4 container mx-auto md:px-8 px-4'>
          
-            <h1 className='text-3xl py-4 font-semibold text-center uppercase text-gray-800'>Services</h1>
-
-            <div className='container mx-auto md:px-4 sm:px-4'> 
+            <div className='text-center text-gray-800 pt-4 pb-8'>
+                <h1 className='text-3xl font-semibold uppercase'>Services</h1>
+                <p>We provide the best in class services for our customers</p>
+            </div>
+            <div className=''> 
             
                 <ServiceCard cards={cards} />
             

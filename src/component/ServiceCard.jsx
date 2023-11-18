@@ -19,7 +19,7 @@ import { useState } from "react";
       
     
       return (
-        <div className="container mx-auto md:px-8 sm:px-4 grid grid-cols-1 md:grid-cols-3 max-w-full h-auto gap-y-4 gap-x-4 justify-items-center md:justify-between">
+        <div className="container mx-auto md:px-8 sm:px-4 grid grid-cols-1 md:grid-cols-3 max-w-full h-auto gap-y-8 gap-x-4  md:justify-between">
             {
                 cards.map((cards)=>{
                     const {id,img,name,description,button}=cards;
@@ -27,14 +27,14 @@ import { useState } from "react";
                         
                             
                         <Card key={id} className="mt-6 hover:shadow">
-                            <CardHeader className="relative h-56">
+                            <CardHeader className="relative ">
                                 <img className='h-56 lg:w-8/12 sm:w-1/2 md:w-fit mx-auto'
                                 src={img}
                                 alt="card-image"
                             />
                             </CardHeader>
                             <CardBody>
-                                <Typography variant="h5" className="mb-2 text-gray-800 uppercase">
+                                <Typography variant="h6" className="mb-2 text-gray-800 uppercase">
                                     {name}
                                 </Typography>
                                     <Typography>
@@ -42,18 +42,9 @@ import { useState } from "react";
                                     </Typography>
                                 </CardBody>
                                 <CardFooter className="pt-0">
-                                    <Button className='bg-red-800' onClick={handleOpen}>
+                                    {/* <Button className='bg-red-800' onClick={handleOpen}>
                                     {button}
-                                    </Button>
-                                    {/* <Dialog open={open} handler={handleOpen}animate={{
-                                        mount: { scale: 1, y: 0 },
-                                        unmount: { scale: 0.9, y: -100 },}}>
-                                    <DialogHeader>Its a simple dialog.</DialogHeader>
-                                    <DialogBody>
-                                    {description}
-                                    </DialogBody>
-                                    
-                                    </Dialog> */}
+                                    </Button> */}
                                 </CardFooter>
                         </Card>
                        

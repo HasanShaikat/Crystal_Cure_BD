@@ -5,7 +5,7 @@ const TopHeader = () => {
             <div className='container mx-auto px-8 grid md:grid-cols-3 text-center'>
                 <h1>+880 189197 1990 / +880 19044 80448</h1>
                 <span>crystalcurebd@gmail.com</span>
-                <span>678/5-A, West Shewrapra, Dhaka</span>
+                <span>678/5-A, North Karful, Dhaka-1206</span>
             </div>
         </div>
     );
