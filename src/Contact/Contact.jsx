@@ -1,6 +1,24 @@
 import { Button, Input, Textarea } from "@material-tailwind/react";
+import { useRef, useState } from "react";
 
 const Contact = () => {
+    const formRef = useRef(null)
+    const scriptUrl = "https://script.google.com/macros/s/AKfycbw9xMkIezDFQqMIFCq4Vii1xKm1zZ-1XQpqFbyWzvUolyeCgx3WY0jzCkRcp5Rf_DDj/exec"
+    const [loading, setLoading] = useState(false)
+
+    const handleSubmit = (e) =>{
+        e.preventDefault()
+        setLoading(true)
+
+        fetch(scriptUrl, {
+        method: 'POST', 
+        body: new FormData(formRef.current)
+
+    }).then(res =>
+            setLoading(false)
+        )
+        .catch(err => console.log(err))
+    }
     return (
         <section className="my-4" id='contact'>
             <div className="text-center my-4">
@@ -9,22 +27,25 @@ const Contact = () => {
             </div>          
             
             <div className="grid md:grid-cols-2 gap-4 container mx-auto items-center px-4">
-                <form className="grid gap-4 h-full">
+                <form ref={formRef} onSubmit={handleSubmit} name="google-sheet" className="grid gap-4 h-full">
                     <div className="flex w-full flex-col gap-6">
-                        <Input name="name" type="text" label="Name" required />
+                        <Input name="Name" type="text" label="Name" required />
                     </div>
                     <div className="flex w-full flex-col gap-6">
-                        <Input name="email" type="email" label="Email" required/>
+                        <Input name="Email" type="email" label="Email" required/>
                     </div>
                     <div className="flex w-full flex-col gap-6">
-                        <Input name="phone " type="tel" label="Phone" required/>
+                        <Input type="number" name="Phone" label="Phone" required/>
                     </div>
                     <div className="flex w-full flex-col gap-6">
-                        <Textarea name="message" type="text" label="Message" required />
+                        <Textarea name="Message" type="text" label="Message" required />
                     </div>
-                    <Button type="submit" variant="outlined" color="green" className="text-md w-2/4">Submit</Button>
+                    <div className="flex gap-6">
+                        <Button value={loading ? "Loading..." : "Submit"} type="submit" variant="outlined" color="green" className="text-md w-full">Submit</Button>
+                        <Button type="reset" variant="outlined" color="green" className="text-md w-full">Reset Form</Button>
+                    </div>
 
-                </form>
+                </form>       
 
                 <div className='grid gap-y-8 md:justify-center'>
                         <div>
