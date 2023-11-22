@@ -31,10 +31,8 @@ const Services = () => {
                 <h1 className='text-3xl font-semibold uppercase'>Services</h1>
                 <p>We provide the best in class services for our customers</p>
             </div>
-            <div className=''> 
-            
-                <ServiceCard cards={cards} />
-            
+            <div>             
+                <ServiceCard cards={cards} />            
             </div>
 
         </div>

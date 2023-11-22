@@ -18,7 +18,7 @@ const Footer = () => {
                     <h3 className="font-bold text-lg">
                     Why Choose Crystal Cure?
                     </h3>
-                    <p className="text-gray-600">At <span className="font-bold">Crystal Cure Pest Control</span>, we understand that the well-being of your home and business is paramount. <br />We don't believe in one-size-fits-all solutions. Every pest problem is unique, and our expert team tailors our services to meet your specific needs.</p>
+                    <p className="text-gray-600">At <span className="font-bold">Crystal Cure Pest Control</span>, we understand that the well-being of your home and business is paramount. <br />We don&apos;t believe in one-size-fits-all solutions. Every pest problem is unique, and our expert team tailors our services to meet your specific needs.</p>
                     <p className="text-gray-600">We stand by the quality of our services. Crystal Cure offers guarantees and follow-up inspections to ensure the long-term effectiveness of our pest control solutions.</p>
                 </div>
 
@@ -37,13 +37,11 @@ const Footer = () => {
                                     <RiArrowUpDoubleLine className="animate-bounce w-8 h-8 pt-2 scroll-smooth"></RiArrowUpDoubleLine>
                                 </a>
                             </div>
-
                         </div>
-                        
                     </div>
             </div>
 
-            <div className="bg-red-700 text-center text-white py-2">
+            <div className="bg-red-900 text-center text-white py-2 ">
                 <span>Copyright &copy; 2023 Design by <a href="https://www.linkedin.com/in/mehedi910/" target="blank" className="font-bold  italic uppercase"> Mehedi Hasan </a> </span>
             </div>
         </div>

@@ -1,4 +1,3 @@
-
 import About from './About/About'
 import './App.css'
 import Banner from './Banner/Banner'
@@ -11,23 +10,22 @@ import Services from './Services/Services'
 import TopHeader from './Top Header/TopHeader'
 
 function App() {
-  
 
   return (
     <div>
-      <TopHeader/>
-      <Header></Header>
+      <TopHeader />
+      <Header />
       <Banner/>
       <ExtraLine/>
       <Services />
-      <ExtraLine/>
+      <ExtraLine />
       <About />
-      <ExtraLine/>
+      <ExtraLine />
       <Faq />
-      <ExtraLine/>
+      <ExtraLine />
       <Contact />
-      <ExtraLine/>
-      <Footer/>
+      <ExtraLine />
+      <Footer />
     </div>
   )
 }
